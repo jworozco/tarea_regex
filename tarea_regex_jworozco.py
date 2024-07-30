@@ -11,8 +11,8 @@ def process_file(input_file_path):
     date_time_replacement = r"\1\\\2\\\3 \4:\5:\6"
 
     # Regular expression to match "Gate NG45Y" with a space and remove it
-    gate_pattern = r"Gate NG45Y"
-    gate_replacement = "GateNG45Y"
+    gate_pattern = r"NG45Y "
+    gate_replacement = "NG45Y"
 
     with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
         for line in input_file:
